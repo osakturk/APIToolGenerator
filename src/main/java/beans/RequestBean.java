@@ -21,14 +21,7 @@ public class RequestBean {
 
     private static Parameters setParameterFromArguments(JSONObject argument) {
         Parameters parameters = new Parameters();
-        parameters.setCid(argument.get("cid").toString());
-        parameters.setEndDate(argument.get("de").toString());
-        parameters.setDuration(Long.parseLong(argument.get("du").toString()));
-        parameters.setNumber(argument.get("num").toString());
-        parameters.setStartDate(argument.get("da").toString());
-        parameters.setUuid(argument.get("UUID").toString());
-        parameters.setPhone(argument.get("p").toString());
-        parameters.setCid(argument.get("dr").toString());
+        parameters.setAll(argument.get("lorem_ipsum"));
         return parameters;
     }
 }
