@@ -109,7 +109,7 @@ public class HttpConnection implements HTTPUtility {
     public void sendRequest() {
         System.out.println("SENDING REQUEST");
         String connectionString;
-        connectionString = "http://192.168.168.135:8080/api/mobile";
+        connectionString = "http://localhost:8080/api";
         System.out.println("URL : " + connectionString + ", PORT: " + this.port);
 
         try {
